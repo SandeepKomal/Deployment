@@ -1,0 +1,33 @@
+sudo su -  ------> switch to root user 
+
+yum install git -y 
+
+yum install httpd -y
+
+mkdir test(folder name)  ----------> creating folder in root user
+
+cd test
+
+git clone url 
+
+cd (cloned folder name)
+
+mv * /var/www/html/
+
+cd /var/www/html 
+
+ls 
+
+systemcl status httpd
+
+systemctl enable httpd
+
+systemctl start httpd 
+
+add http port 80  and https port in security group of the ec2 instance.
+
+Allocate Elastic ip address to instance and enter that elastic ip address in the brwoser your website should be up and running
+
+Instaed of Elastic ip we can add loadbalancer and open the DNS endpoint in the browser to check the website is running or not.
+
+
